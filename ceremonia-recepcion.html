@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Matrimonio Renata & Juan Eduardo">
+<meta property="og:description" content="Sábado 8 de Agosto 2026 · Ceremonia y Recepción">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./og-image.png">
+<title>Matrimonio Renata & Juan Eduardo — Ceremonia y Recepción</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Josefin+Sans:wght@300;400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F3EE;
+    --bg-alt: #EDE8E0;
+    --text: #3B3530;
+    --text-light: #7A7167;
+    --accent: #9B8B7A;
+    --accent-dark: #6B5D50;
+    --gold: #B8A088;
+    --gold-light: #D4C4AE;
+    --line: #C8BDB0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #2C2825;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 24px 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .card {
+    width: 100%;
+    max-width: 520px;
+    background: var(--bg);
+    border-radius: 2px;
+    padding: 52px 40px 48px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.2s ease-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 14px; right: 14px; bottom: 14px; left: 14px;
+    border: 0.5px solid var(--gold-light);
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  .corner { position: absolute; width: 28px; height: 28px; opacity: 0.4; }
+  .corner svg { width: 100%; height: 100%; }
+  .corner-tl { top: 18px; left: 18px; }
+  .corner-tr { top: 18px; right: 18px; transform: scaleX(-1); }
+  .corner-bl { bottom: 18px; left: 18px; transform: scaleY(-1); }
+  .corner-br { bottom: 18px; right: 18px; transform: scale(-1, -1); }
+  .parents {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: var(--text-light);
+    line-height: 1.65;
+    letter-spacing: 0.3px;
+  }
+  .ornament-diamond {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px;
+    color: var(--gold);
+    letter-spacing: 6px;
+    margin: 14px 0;
+  }
+  .invite-text {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--accent);
+    letter-spacing: 1.5px;
+    margin: 16px 0 12px;
+  }
+  .line-deco {
+    display: flex;
+    justify-content: center;
+    margin: 6px 0 12px;
+  }
+  .line-deco span {
+    display: block;
+    width: 180px;
+    height: 0.5px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .names {
+    text-align: center;
+    margin: 14px 0 8px;
+  }
+  .names .name {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 46px;
+    color: var(--accent-dark);
+    line-height: 1.15;
+  }
+  .names .ampersand {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 4px 0;
+  }
+  .line-deco-wide span { width: 240px; }
+  .date-block {
+    text-align: center;
+    margin: 20px 0 8px;
+  }
+  .date-block .day-name {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .date-block .day-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 68px;
+    font-weight: 300;
+    color: var(--accent-dark);
+    line-height: 1;
+    margin: 2px 0;
+  }
+  .date-block .month-year {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .section {
+    text-align: center;
+    margin: 28px 0 0;
+  }
+  .section-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent-dark);
+    margin-bottom: 8px;
+  }
+  .section-detail {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .section-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.3s;
+  }
+  .section-link:hover { color: var(--gold); }
+  .closing {
+    text-align: center;
+    margin-top: 36px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--accent);
+    line-height: 1.7;
+  }
+  .separator-dots {
+    text-align: center;
+    margin: 24px 0 4px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 8px;
+    color: var(--gold);
+    letter-spacing: 8px;
+  }
+  @media (max-width: 560px) {
+    .card { padding: 44px 28px 40px; }
+    .names .name { font-size: 38px; }
+    .date-block .day-number { font-size: 56px; }
+    .parents { font-size: 12.5px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="corner corner-tl"><svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 C2 14, 14 26, 26 26" stroke="#B8A088" stroke-width="0.5" fill="none"/><path d="M2 2 C2 8, 6 12, 12 12" stroke="#B8A088" stroke-width="0.5" fill="none"/></svg></div>
+  <div class="corner corner-tr"><svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 C2 14, 14 26, 26 26" stroke="#B8A088" stroke-width="0.5" fill="none"/><path d="M2 2 C2 8, 6 12, 12 12" stroke="#B8A088" stroke-width="0.5" fill="none"/></svg></div>
+  <div class="corner corner-bl"><svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 C2 14, 14 26, 26 26" stroke="#B8A088" stroke-width="0.5" fill="none"/><path d="M2 2 C2 8, 6 12, 12 12" stroke="#B8A088" stroke-width="0.5" fill="none"/></svg></div>
+  <div class="corner corner-br"><svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2 C2 14, 14 26, 26 26" stroke="#B8A088" stroke-width="0.5" fill="none"/><path d="M2 2 C2 8, 6 12, 12 12" stroke="#B8A088" stroke-width="0.5" fill="none"/></svg></div>
+
+  <!-- Parents -->
+  <div class="parents">
+    Antonio Gregorio Espinosa Azócar<br>
+    María Cecilia Rudolff Fontalba
+  </div>
+  <div class="ornament-diamond">◇</div>
+  <div class="parents">
+    Juan Eduardo Saldivia Medina<br>
+    María del Pilar Varela Covarrubias
+  </div>
+
+  <p class="invite-text">participan a usted el matrimonio de sus hijos</p>
+  <div class="line-deco"><span></span></div>
+
+  <!-- Names -->
+  <div class="names">
+    <div class="name">Renata</div>
+    <div class="ampersand">&amp;</div>
+    <div class="name">Juan Eduardo</div>
+  </div>
+  <div class="line-deco line-deco-wide"><span></span></div>
+
+  <!-- Date -->
+  <div class="date-block">
+    <div class="day-name">Sábado</div>
+    <div class="day-number">8</div>
+    <div class="month-year">Agosto · 2026</div>
+  </div>
+
+  <!-- Ceremony -->
+  <div class="section">
+    <div class="section-title">Ceremonia</div>
+    <div class="section-detail">
+      17:00 Horas<br>
+      Iglesia Jesús María y José<br>
+      Chicureo
+    </div>
+    <a href="https://maps.app.goo.gl/5zCwk5foK953Mwd58" target="_blank" class="section-link">Ver Mapa →</a>
+  </div>
+
+  <div class="separator-dots">· · ·</div>
+
+  <!-- Reception -->
+  <div class="section">
+    <div class="section-title">Recepción</div>
+    <div class="section-detail">
+      Luego de la Ceremonia<br>
+      Centro de Eventos Los Ingleses<br>
+      Chicureo
+    </div>
+    <a href="https://maps.app.goo.gl/ArockqiD4PA7nUBu9" target="_blank" class="section-link">Ver Mapa →</a>
+  </div>
+
+  <div class="separator-dots">· · ·</div>
+
+  <!-- Gift list -->
+  <div class="section">
+    <div class="section-title">Lista de Novios</div>
+    <div class="section-detail">
+      Novios Falabella<br>
+      Código: 2102932
+    </div>
+    <a href="https://novios.falabella.com/info-evento/evento?codigoEvento=2102932" target="_blank" class="section-link">Ver Lista →</a>
+  </div>
+
+  <!-- RSVP -->
+  <div class="section">
+    <div class="section-title">Confirma tu Asistencia</div>
+    <a href="https://forms.gle/R3zFnH2sJoiSDEZ8A" target="_blank" class="section-link">Confirmar →</a>
+  </div>
+
+  <p class="closing">
+    Estamos muy felices de que puedas<br>
+    acompañarnos en este día tan especial
+  </p>
+</div>
+
+</body>
+</html>
